@@ -1,0 +1,233 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-image: url("/img/bg.png");
+    font-family: 'Roboto';
+    background-position: top center;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+p {
+    text-align: left;
+    font-size: 1.5em;
+    text-shadow: rgb(19, 33, 54) 0.1em 0.1em; 
+}
+
+.page {
+    background-color: rgba(230, 255, 230, 0.05);
+    width: 75vw;
+    height: 100%;
+    padding: 3em;
+    backdrop-filter: blur(5px);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border-style: solid;
+    border-width: 0em 0.2em;
+    border-color: black;
+}
+
+.english { 
+    font-family: 'Roboto';
+}
+.tokiPona {
+    font-family: 'Nasin Nanpa';
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'Bungee';
+    font-size: 5em;
+    font-weight: normal;
+    margin: 0px;
+    text-align: center;
+    background: -webkit-linear-gradient(white, rgb(145, 165, 196));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: black 0.05em;
+    background-clip: text;
+}
+h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    margin: 0px;
+    color: rgb(145, 165, 196);
+    text-align: center;
+    text-shadow: black 0.1em 0.1em; 
+}
+hr {
+    margin: 2em 0em;
+    border-radius: 1em;
+    border-width: 0.25em;
+    border-style: solid;
+    border-color: black;
+}
+
+.center p {
+    text-align: center;
+}
+
+.flexrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+}
+
+.flexcol {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    align-self: flex-start;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.dividing {
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.pfp img {
+    width: 10em;
+    aspect-ratio: 1/1;
+    border-radius: 2em;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.5em;
+    background-size: contain;
+    background-position: center;
+}
+
+.pfp p {
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    height: 10%;
+    padding: .5em;
+    margin-top: 75%;
+    opacity: 0%;
+    transition: 0.5s;
+}
+
+.pfp:hover p {
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+.overview {
+    padding: 0em 5em;
+}
+
+.rain {
+    z-index: -1;
+    position: fixed;
+    x: 0px;
+    y: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+    -webkit-user-drag: none;
+    opacity: 25%;
+}
+
+.external {
+    display: flex;
+    flex-direction: column-reverse;
+    width: calc(35vw + 1em);
+}
+
+.external a, a:hover, a:active, a:visited, a:link {
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.external img {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.5em;
+    margin-bottom: 0px;
+}
+
+.external p {
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+    text-align: center;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    text-decoration-line: none;
+    margin-top: 0px;
+    padding-bottom: 8px;
+    text-overflow: "-";
+}
+
+.external:hover p {
+    color: pink;
+}
+
+.external em {
+    font-size: .6em;
+    margin-top: 0px;
+}
+
+.questions {
+    text-align: left;
+    text-shadow: rgb(0,0,0) 0.1em 0.1em;
+}
+
+.questions li {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+
+.questions .answer {
+    padding-left: 2em;
+}
+
+.questions .answer li {
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.questions .answer li a {
+    text-decoration: underline;
+}
+
+code {
+    background-color: rgba(0,0,0,0.5);
+    padding: 0.1em;
+    border-radius: 0.5em;
+}
+
+a {
+    color: pink;
+    text-decoration: underline;
+}
+
+a:hover, a:active {
+    color: salmon;
+}
