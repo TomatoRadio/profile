@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!--Bro pressed f12-->
+<!--
+Most code here aside from the marquee scrolling is mine,
+so do with it as you see fit.
+-->
 <html lang="en-US">
 <head>
 
@@ -13,34 +18,29 @@
 <body>
 <script>NekoType="socks"</script>
 <h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
-href="https://webneko.net">Neko</a></h1>
+href="https://webneko.net"></a></h1>
 <img src="img/rain.gif" class="rain">
 <div class="page">
-    <p class="mobilewarning">
+    <p class="mobilewarning mobile_only">
         ⚠️ Please note this site is designed for larger displays such as a Tablet or Desktop. ⚠️
         <br>
         This warning displays for users with a screen width of 720px or less.
     </p>
-    <div class="flexrow pfp" style="gap: 1em;">
-        <div class="flexcol">
-            <img src="img/TomatoRadioIcon.png">
-            <br>
-            <p class="note">By: Myself</p>
+    <header>
+        <div class="pfp">
+            <p style="background-image: url('img/TomatoRadioIcon.png');"><span>By: Myself</span></p>
+            <p style="background-image: url('img/TR_pfp_bun.png');"><span>By: Fisherman Joe</span></p>
         </div>
-        <div class="flexcol">
-            <h1 style="font-size: 5vw;">TomatoRadio</h1>
-            <h2 style="font-size: 2vw;">Pondering her orb...</h2>
+        <div class="headertext">
+            <h1>TomatoRadio</h1>
+            <h2 id="header_subtitle">Pondering her orb...</h2>
         </div>
-        <div class="flexcol">
-            <img src="img/TR_pfp_bun.png">
-            <br>
-            <p class="note">By: Fisherman Joe</p>
-        </div>
-    </div>
+    </header>
     <hr>
     <p class="overview">
-        Hi! I'm <span style="color: pink">TomatoRadio</span>, and this page is a hub for most info about me and my works. I'm a hobbyist game and web developer who spends most of her time modding games, with my most prominent online prescence being in the OMORI modding space.
+        Hi! I'm <span style="color: pink">TomatoRadio</span>, and this page is a hub for most info about me and my works. I'm a hobbyist game and web developer who spends most of her time modding games, with my most prominent online prescence being in the OMORI modding space. So kick back, and have a look around my <img src="img/Tenna_funnytext_green_room.png" style="height: 1em" onclick="document.getElementById('audio_greenroom').play()">.
     </p>
+    <audio id="audio_greenroom" src="img/snd_ftext_vibraphones_music.wav"></audio>
     <hr>
     <div class="dividing">
         <div class="flexcol">
@@ -61,7 +61,7 @@ href="https://webneko.net">Neko</a></h1>
                 </ul>
                 <li>What is your favorite animal?</li>
                 <ul class="answer">
-                    <li><a href="https://lgbtqia.wiki/wiki/Catgender" target="_blank"><img src="img/catgender.png" style="height: 2em; filter: drop-shadow(black 0.1em 0.1em);"></a></li>
+                    <li><a href="https://lgbtqia.wiki/wiki/Catgender" target="_blank"><img src="img/catgender.png" style="height: 1.5em; filter: drop-shadow(black 0.1em 0.1em);"></a></li>
                 </ul>
                 <li>What languages do you use?</li>
                 <ul class="answer">
@@ -94,14 +94,14 @@ href="https://webneko.net">Neko</a></h1>
         <div class="flexcol" style="gap: 1em">
             <h2>Links To My Works</h2>
             <div class="flexrow" style="gap: 1em">
-                <a class="external" href="https://mods.one/mod/fdtromoutils" target="_blank" style="width: 17.5vw;">
+                <a class="external" href="https://mods.one/mod/fdtromoutils" target="_blank">
                     <p>
                         <strong>FDTR OMORI Utilities</strong><br>
                         <em>Cocreated with: FruitDragon</em>
                     </p>
                     <img src="img/FDTR-OmoUtilCover.png">
                 </a>
-                <a class="external" href="https://mods.one/mod/parallels" target="_blank" style="width: 17.5vw;">
+                <a class="external" href="https://mods.one/mod/parallels" target="_blank">
                     <p>
                         <strong>Parallels</strong><br>
                         <em>Asst. Director w/: FruitDragon & Biggie Cheese</em>
@@ -110,14 +110,14 @@ href="https://webneko.net">Neko</a></h1>
                 </a>
             </div>
             <div class="flexrow" style="gap: 1em">
-                <a class="external" href="https://twhl.info/vault/view/7233" target="_blank" style="width: 17.5vw;">
+                <a class="external" href="https://twhl.info/vault/view/7233" target="_blank">
                     <p>
                         <strong>Cafeteria</strong><br>
                         <em>Half-Life Deathmatch Map</em>
                     </p>
                     <img src="img/cafeteriacover.jpg">
                 </a>
-                <a class="external" href="https://tomatoradio.github.io/tweetgenerator" target="_blank" style="width: 17.5vw;">
+                <a class="external" href="https://tomatoradio.github.io/tweetgenerator" target="_blank">
                     <p>
                         <strong>Tweet Roulette</strong><br>
                         <em>Imagine just a wheel to make more of that tweet.</em>
@@ -159,8 +159,8 @@ href="https://webneko.net">Neko</a></h1>
     <p class="center">Any buttons not by me should link back to their source. Otherwise, I made the button, so feel free to use those.</p>
     <br>
     <div class="marquee" data-pause="true">
-        <div class="marquee-items">
-            <a href="https://88x31.lol" target="_blank"><img loading="lazy" src="https://88x31.lol/counter11.gif"alt="88x31 - Visitor counter"/></a>
+        <div class="marquee-items badge">
+            <a href="https://88x31.lol" target="_blank"><img src="https://88x31.lol/counter11.gif"alt="88x31 - Visitor counter"/></a>
             <a href="https://noaiuse.org" target="_blank"><img loading="lazy" src="https://noaiuse.org/img/no-ai-white-micro-bar.webp" alt="noaiuse.org 88x31 badge"></a>
             <a href="https://yesterweb.org/graphics/buttons" target="_blank"><img loading="lazy" src="img/88x31/aseprite.png"alt="88x31 - Asesprite"/></a>
             <a href="https://yesterweb.org/graphics/buttons" target="_blank"><img loading="lazy" src="img/88x31/tf2.png"alt="88x31 - Team Fortress 2"/></a>
@@ -224,6 +224,33 @@ href="https://webneko.net">Neko</a></h1>
             
         </div>
     </div>
+    <br>
+    <div class="marquee" data-pause="true" data-direction="right">
+        <div class="marquee-items stamp">
+            <a href="index.html" target="_blank"><img loading="lazy" src="img/stamps/broadcastbytr.png"alt="Stamp - Broadcast to you by TomatoRadio"/></a>
+            <a href="https://y2k.neocities.org/stamps" target="_blank"><img loading="lazy" src="img/stamps/strawberryaddict.gif"alt="Stamp - Strawberry Addicted"/></a>
+            <a href="https://y2k.neocities.org/stamps" target="_blank"><img loading="lazy" src="img/stamps/pantonerosequartz.png"alt="Stamp - Pantone Rose Quartz"/></a>
+            <!--FUCK YOU PANTONE-->
+            <a href="https://y2k.neocities.org/stamps" target="_blank"><img loading="lazy" src="img/stamps/pacman.gif"alt="Stamp - Pac-Man"/></a>
+            <a href="https://y2k.neocities.org/stamps" target="_blank"><img loading="lazy" src="img/stamps/leadpipe.png"alt="Stamp - I wanna beat my younger self with a lead pipe."/></a>
+            <a href="https://y2k.neocities.org/stamps" target="_blank"><img loading="lazy" src="img/stamps/stupidbitchdisorder.gif"alt="Stamp - Stupid Bitch Disorder"/></a>
+            <a href="https://supplies.ju.mp/#stamps" target="_blank"><img loading="lazy" src="img/stamps/fuckyousonicalina.jpg"alt="Stamp - Say No to Sonic X Rosalina"/></a>
+            <a href="https://allyratworld.com/stamps" target="_blank"><img loading="lazy" src="img/stamps/youlookbeautifultoday.png"alt="Stamp - You look beautiful today!"/></a>
+            <a href="https://iloveblinking.neocities.org/stamps" target="_blank"><img loading="lazy" src="img/stamps/peoplelikethings.gif"alt="Stamp - Let people like things."/></a>
+            <a href="https://marleyz-stampz.neocities.org/" target="_blank"><img loading="lazy" src="img/stamps/dog.gif"alt="Stamp - The dog absorbed the GIF."/></a>
+            <a href="https://marleyz-stampz.neocities.org/" target="_blank"><img loading="lazy" src="img/stamps/rick.gif"alt="Stamp - Rick"/></a>
+            <a href="https://atlaswow.neocities.org/" target="_blank"><img loading="lazy" src="img/stamps/selftaughtidiot.png"alt="Stamp - Self-Taught Idiot"/></a>
+            <a href="https://atlaswow.neocities.org/" target="_blank"><img loading="lazy" src="img/stamps/badmusic.gif"alt="Stamp - My Music is bad but thats ok."/></a>
+            <a href="https://atlaswow.neocities.org/" target="_blank"><img loading="lazy" src="img/stamps/chewingIce.gif"alt="Stamp - I chew my ice cubes"/></a>
+            <a href="https://atlaswow.neocities.org/" target="_blank"><img loading="lazy" src="img/stamps/deleteSys32.gif"alt="Stamp - DELETE SYSTEM32"/></a>
+            <a href="https://atlaswow.neocities.org/" target="_blank"><img loading="lazy" src="img/stamps/geigercounters.png"alt="Stamp - Geiger Counters Scream near me"/></a>
+            <a href="https://atlaswow.neocities.org/" target="_blank"><img loading="lazy" src="img/stamps/safesex.gif"alt="Stamp - Support Safe Sex; WEAR A HELMET"/></a>
+            <a href="https://neils-stamp-page.neocities.org/" target="_blank"><img loading="lazy" src="img/stamps/unpleasantGradient.png"alt="Stamp - Unpleasant Gradient"/></a>
+            <a href="https://neils-stamp-page.neocities.org/" target="_blank"><img loading="lazy" src="img/stamps/storyOfUndertale.gif"alt="Stamp - STORY OF UNDERTALE"/></a>
+            <a href="index.html" target="_blank"><img loading="lazy" src="img/stamps/iLoveTv.gif"alt="Stamp - I LOVE TV!"/></a>
+            <a href="index.html" target="_blank"><img loading="lazy" src="img/stamps/aquaGenderEnvy.png"alt="Stamp - Aqua gives me gender envy!"/></a>
+        </div>
+    </div>
     <p class="center">Set scrolling speed to <input type="number" value="60" pattern="/0-9/i" id="marqueeSpeed" onChange="setMarqueeSpeed(this.value)"/> seconds</p>
     <br>
     <div class="linkme">
@@ -254,13 +281,27 @@ href="https://webneko.net">Neko</a></h1>
     </p>
         
     <ul class="changelog">
+        <li>9/17/2026 - v1.2.0</li>
+            <ul class="changes">
+                <li>Cleaned up the header for better viewport compatibility</li>
+                <li>Made the PFP credits hover-based</li>
+                <li>Randomized the header's subtitle</li>
+                <li>Added the <img src="img/Tenna_funnytext_green_room.png" style="height: 1em" onclick="document.getElementById('audio_greenroom').play()"></li>
+                <li>Changed the size of the Catgender icon in the About Me</li>
+                <li>Changed the sizing rules of the Links To My Works</li>
+                <li>Added stamps to My Sillies</li>
+                <li>Made the changelog a scrolling section</li>
+                <li>Added Tenna</li>
+                <li>Attempted fix of the <a href="https://webneko.net/" target="_blank">Neko</a> link appearing as raw text on some displays</li>
+                <li>Removed periods that shouldn't have been in the prior changelog (periods don't go in lists usually)</li>
+            </ul>
         <li>9/16/2026 - v1.1.0</li>
             <ul class="changes">
                 <li>Added <a href="https://webneko.net/" target="_blank">Neko</a> to the site</li>
-                <li>Added credits to the PFPs in the header.</li>
-                <li>Added the "My Sillies" section with 88x31 badges and link-me images.</li>
-                <li>Added the changelog you're reading.</li>
-                <li>Probably cleaned up some bits of the CSS and whatnot.</li>
+                <li>Added credits to the PFPs in the header</li>
+                <li>Added the "My Sillies" section with 88x31 badges and link-me images</li>
+                <li>Added the changelog you're readin.</li>
+                <li>Probably cleaned up some bits of the CSS and whatnot</li>
             </ul>
         <li>9/15/2026 - v1.0.0</li>
             <ul class="changes">
@@ -268,9 +309,14 @@ href="https://webneko.net">Neko</a></h1>
             </ul>
     </ul>
     <hr>
-    <p class="note">Trans Rights are Human Rights</p>
+    <div class="flexrow">
+        <quote class="center">"Trans Rights are Human Rights!"</quote>
+        <img src="img/Tenna_face.gif" class="tennaface" id="tennaface" width="124" height="113" onclick="document.getElementById('audio_enter').play()">
+    </div>
+    <audio id="audio_enter" src="img/snd_ftext_enter_music.wav"></audio>
 </div>
 <script>
+// This code is from https://codepen.io/KobaDesu/pen/jOgqBwN
 function handleMarquee() {
 // Get all marquees on page
 const marquees = document.querySelectorAll(".marquee");
@@ -311,10 +357,20 @@ if (marquee.dataset.pause == "true") {
 });
 }
 handleMarquee();
+// Though this is custom
 function setMarqueeSpeed(speed) {
     const container = document.querySelectorAll(".marquee-items");
     container.forEach((scroller) => scroller.style.animationDuration = speed + "s");
 };
+function setSubtitleQuote() {
+    const h2 = document.getElementById("header_subtitle");
+    const quotes = [
+        '"Nothing is sacred to goop."','"You\'ll do great things I promise!"','"To be ass is to be real."','"I don\'t bite, unless you want..."',
+        '"And I\'m liiiiiicking it..."','"No I don\'t really like tomatoes."','"No I don\'t really understand audio."','"Ponder that orb, girl."','"Meow"'
+    ];
+    h2.innerText = quotes[Math.floor(Math.random()*quotes.length)];
+};
+setSubtitleQuote();
 </script>
 </body>
 </html>

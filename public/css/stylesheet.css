@@ -33,6 +33,7 @@ p {
     width: 75vw;
     height: 100%;
     padding: 3em;
+    padding-bottom: 0;
     backdrop-filter: blur(5px);
     color: white;
     display: flex;
@@ -49,6 +50,50 @@ p {
 .tokiPona {
     font-family: 'Nasin Nanpa';
     font-style: normal;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 3em;
+}
+
+header .pfp {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    background-color: black;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+header .pfp p {
+    width: 10em;
+    height: 10em;
+    border-radius: 1em;
+    background-size: contain;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+header .pfp p span {
+    padding: 0.25em;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    opacity: 0%;
+    transition: 0.5s;
+}
+
+header .pfp p:hover span {
+    opacity: 100%;
 }
 
 h1 {
@@ -71,7 +116,7 @@ h2 {
     margin: 0px;
     color: rgb(145, 165, 196);
     text-align: center;
-    text-shadow: black 0.1em 0.1em; 
+    text-shadow: black 0.1em 0.1em;
 }
 hr {
     margin: 2em 0em;
@@ -124,17 +169,6 @@ hr {
     flex-wrap: wrap;
 }
 
-.pfp img {
-    width: 10vw;
-    aspect-ratio: 1/1;
-    border-radius: 2em;
-    border-color: black;
-    border-style: solid;
-    border-width: 0.5em;
-    background-size: contain;
-    background-position: center;
-}
-
 .rain {
     z-index: -1;
     position: fixed;
@@ -142,8 +176,8 @@ hr {
     y: 0px;
     margin: 0px;
     padding: 0px;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     user-select: none;
     -webkit-user-drag: none;
     opacity: 25%;
@@ -152,7 +186,7 @@ hr {
 .external {
     display: flex;
     flex-direction: column-reverse;
-    width: calc(35vw + 1em);
+    width: 18em;
 }
 
 .external a, a:hover, a:active, a:visited, a:link {
@@ -192,8 +226,8 @@ hr {
 }
 
 .quicklink {
-    width: 8vw;
-    font-size: 1vw;
+    width: 8em;
+    font-size: 1em;
 }
 
 .questions {
@@ -269,6 +303,8 @@ input {
     list-style-type: disc;
     list-style-position: inside;
     padding-left: 1em;
+    max-height: 15em;
+    overflow-y: scroll;
 }
 
 .changelog li {
@@ -291,7 +327,6 @@ input {
     margin-bottom: 3em;
     color: yellow;
     text-shadow: black 0.1em 0.1em;
-    display: none;
 }
 
 /* Most code here basically copied from https://codepen.io/KobaDesu/pen/jOgqBwN */
@@ -333,15 +368,22 @@ input {
     min-width: 100%;
     position: relative;
 }
+
 .marquee-items a img {
-    width: 88px;
-    height: 31px;
+    margin: 0;
     image-rendering: pixelated;
 }
-.marquee-items > * {
-    margin: 0;
+
+.badge a, .badge a img {
+    width: 88px;
     height: 31px;
 }
+
+.stamp a, .stamp a img {
+    width: 99px;
+    height: 56px;
+}
+
 .paused {
     -webkit-animation-play-state:paused;
     -moz-animation-play-state:paused;
@@ -350,8 +392,20 @@ input {
 }
 /* End of copied code */
 
+.mobile_only {
+    display: none;
+}
+
 @media(max-width: 720px) {
-    .mobilewarning {
+    .mobile_only {
         display: block;
+    }
+
+    .desktop_only {
+        display: none;
+    }
+
+    .page {
+        width: 100%;
     }
 }
