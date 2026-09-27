@@ -20,6 +20,7 @@ so do with it as you see fit.
 <h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
 href="https://webneko.net"></a></h1>
 <img src="img/rain.gif" class="rain">
+<img src="img/ElonMuskPenis.png" class="elon-musk" id="ElonMuskPenis">
 <div class="page">
     <p class="mobilewarning mobile_only">
         ⚠️ Please note this site is designed for larger displays such as a Tablet or Desktop. ⚠️
@@ -38,7 +39,7 @@ href="https://webneko.net"></a></h1>
     </header>
     <hr>
     <p class="overview">
-        Hi! I'm <span style="color: pink">TomatoRadio</span>, and this page is a hub for most info about me and my works. I'm a hobbyist game and web developer who spends most of her time modding games, with my most prominent online prescence being in the OMORI modding space. So kick back, and have a look around my <img src="img/Tenna_funnytext_green_room.png" style="height: 1em" onclick="document.getElementById('audio_greenroom').play()">.
+        Hi! I'm <span style="color: pink">TomatoRadio</span>, and this page is a hub for most info about me and my works. I'm a hobbyist game and web developer who spends most of her time modding games, with my most prominent online prescence being in the OMORI modding space. So kick back, and have a look around my <img class="inline-img" src="img/Tenna_funnytext_green_room.png" style="height: 1em" onclick="document.getElementById('audio_greenroom').play()">.
     </p>
     <audio id="audio_greenroom" src="img/snd_ftext_vibraphones_music.wav"></audio>
     <hr>
@@ -91,7 +92,7 @@ href="https://webneko.net"></a></h1>
                 </ul>
             </ul>
         </div>
-        <div class="flexcol" style="gap: 1em">
+        <div class="flexcol" style="gap: 1em; align-items: stretch;">
             <h2>Links To My Works</h2>
             <div class="flexrow" style="gap: 1em">
                 <a class="external" href="https://mods.one/mod/fdtromoutils" target="_blank">
@@ -107,6 +108,13 @@ href="https://webneko.net"></a></h1>
                         <em>Asst. Director w/: FruitDragon & Biggie Cheese</em>
                     </p>
                     <img src="img/parallelscover.png">
+                <a class="external" href="https://docs.google.com/document/d/1t59hzeERvwok2ZsQVs6AgFj5WVZdeAPwiWYFgkDGLiE/edit?tab=t.0" target="_blank">
+                    <p>
+                        <strong>OMORI Modding Guide</strong><br>
+                        <em>Cocreated with: FruitDragon</em>
+                    </p>
+                    <img src="img/moddingguide.png">
+                </a>
                 </a>
             </div>
             <div class="flexrow" style="gap: 1em">
@@ -120,9 +128,16 @@ href="https://webneko.net"></a></h1>
                 <a class="external" href="https://tomatoradio.github.io/tweetgenerator" target="_blank">
                     <p>
                         <strong>Tweet Roulette</strong><br>
-                        <em>Imagine just a wheel to make more of that tweet.</em>
+                        <em>Imagine just a wheel to make more of that.</em>
                     </p>
                     <img src="img/croissant.gif">
+                </a>
+                <a class="external" href="https://tomatoradio.github.io/tokiponasentencegenerator" target="_blank">
+                    <p>
+                        <strong class="tokiPona">ilo pi (nasin ala) toki pona</strong><br>
+                        <em class="tokiPona">ona li mama e kulupu toki kepeken(nasin ala)</em>
+                    </p>
+                    <img src="img/tokiponarando.png">
                 </a>
             </div>
             <div class="flexrow" style="gap: 1em; flex-wrap: wrap;">
@@ -152,6 +167,39 @@ href="https://webneko.net"></a></h1>
                 </a>
             </div>
         </div>
+    </div>
+    <hr>
+    <h2 class="center">Things I want to link you to</h2>
+    <br>
+    <div class="flexrow" style="gap: 1em; flex-wrap: wrap; align-items: start;">
+        <a class="external quicklink" href="https://www.youtube.com/watch?v=7HuMq9XszSc" target="_blank">
+            <p><strong>Hummen Kuube</strong><br></p>
+            <img src="img/newtech.png" style="background-color: black;">
+        </a>
+        <a class="external quicklink" href="https://www.youtube.com/watch?v=z0i3sjeL60M" target="_blank">
+            <p><strong>Blood Crushers</strong><br></p>
+            <img src="img/bloodcrushers.jpg" style="background-color: black;">
+        </a>
+        <a class="external quicklink" href="https://www.youtube.com/watch?v=JIAt9BTByAU" target="_blank">
+            <p><strong>Future<br>Past</strong><br></p>
+            <img src="img/futurepast.png" style="background-color: black;">
+        </a>
+        <a class="external quicklink" href="https://mods.one/mod/brokendreams" target="_blank">
+            <p><strong>Broken Dreams</strong><br></p>
+            <img src="img/brokendreams.webp" style="background-color: black;">
+        </a>
+        <a class="external quicklink" href="https://www.youtube.com/watch?v=Qqi_EZ0DgrA&xstg" target="_blank">
+            <p><strong>Space<br>1.8</strong><br></p>
+            <img src="img/space18.webp" style="background-color: black;">
+        </a>
+        <a class="external quicklink" href="https://x.com/BiggieCheese406" target="_blank">
+            <p><strong>Biggie Cheese</strong><br></p>
+            <img src="img/biggie.jpg" style="background-color: black;">
+        </a>
+        <button class="external quicklink" onclick="elonMuskPenisFlash2000()">
+            <p><strong>Elon Musk Flash</strong><br></p>
+            <img src="img/elon_penis_icon.png" style="background-color: black;">
+        </button>
     </div>
     <hr>
     <h2 class="center">My sillies...&lt3</h2>
@@ -248,6 +296,7 @@ href="https://webneko.net"></a></h1>
             <a href="https://atlaswow.neocities.org/" target="_blank"><img loading="lazy" src="img/stamps/geigercounters.png"alt="Stamp - Geiger Counters Scream near me"/></a>
             <a href="https://atlaswow.neocities.org/" target="_blank"><img loading="lazy" src="img/stamps/safesex.gif"alt="Stamp - Support Safe Sex; WEAR A HELMET"/></a>
             <a href="https://neils-stamp-page.neocities.org/" target="_blank"><img loading="lazy" src="img/stamps/unpleasantGradient.png"alt="Stamp - Unpleasant Gradient"/></a>
+            <a href="index.html" target="_blank"><img loading="lazy" src="img/stamps/criticisedonce_dies.png"alt="Stamp - Gets Criticized Once, Fucking Dies."/></a>
             <a href="https://neils-stamp-page.neocities.org/" target="_blank"><img loading="lazy" src="img/stamps/storyOfUndertale.gif"alt="Stamp - STORY OF UNDERTALE"/></a>
             <a href="index.html" target="_blank"><img loading="lazy" src="img/stamps/digitalfootprint.png"alt="Stamp - Digital Footprint? Don't print my feet!"/></a>
             <a href="index.html" target="_blank"><img loading="lazy" src="img/stamps/iLoveTv.gif"alt="Stamp - I LOVE TV!"/></a>
@@ -284,6 +333,21 @@ href="https://webneko.net"></a></h1>
     </p>
         
     <ul class="changelog">
+        <li>9/26/2026 - v1.3.0</li>
+            <ul class="changes">
+                <li>Added text-wrapping for the header's subtitles. This should reduce the amount of times where we need to wrap the entire header</li>
+                <li>Added new quotes to the subtitles</li>
+                <li>The <img class="inline-img" src="img/Tenna_funnytext_green_room_italic.png" style="height: 1em" onclick="document.getElementById('audio_greenroom').play()"> will be treated as text by the cursor
+                    <ul><li>And also now has an italic variant!</li></ul>
+                </li>
+                <li>Added the OMORI Modding Guide to my works</li>
+                <li>Added the <span class="tokiPona">ilo pi(nasin ala) toki pona</span> to my works</li>
+                <li>Changed the caption of the Tweet Generator so that it'll line-break less often</li>
+                <li>Made 2nd headers use dotted underlines to not mistake them as links</li>
+                <li>Added the "Things I want to link you to" section</li>
+                <li>Added a stamp</li>
+                <li>Made the body hide overflowing elements. Should only affect the TomatoRadio title at very specific resolutions.</li>
+            </ul>
         <li>9/20/2026 - v1.2.2</li>
             <ul class="changes">
                 <li>Added a button</li>
@@ -297,7 +361,7 @@ href="https://webneko.net"></a></h1>
                 <li>Cleaned up the header for better viewport compatibility</li>
                 <li>Made the PFP credits hover-based</li>
                 <li>Randomized the header's subtitle</li>
-                <li>Added the <img src="img/Tenna_funnytext_green_room.png" style="height: 1em" onclick="document.getElementById('audio_greenroom').play()"></li>
+                <li>Added the <img class="inline-img" src="img/Tenna_funnytext_green_room_italic.png" style="height: 1em" onclick="document.getElementById('audio_greenroom').play()"></li>
                 <li>Changed the size of the Catgender icon in the About Me</li>
                 <li>Changed the sizing rules of the Links To My Works</li>
                 <li>Added stamps to My Sillies</li>
@@ -377,11 +441,24 @@ function setSubtitleQuote() {
     const h2 = document.getElementById("header_subtitle");
     const quotes = [
         '"Nothing is sacred to goop."','"You\'ll do great things I promise!"','"To be ass is to be real."','"I don\'t bite, unless you want..."',
-        '"And I\'m liiiiiicking it..."','"No I don\'t really like tomatoes."','"No I don\'t really understand audio."','"Ponder that orb, girl."','"Meow"'
+        '"And I\'m liiiiiicking it..."','"No I don\'t really like tomatoes."','"No I don\'t really understand audio."','"Ponder that orb, girl."','"Meow"','"He got the TOUCH OF MIDAS?!"','"I\'m the Right-Hand gal of Mr. Boombastic himself..."','<span class="tokiPona">te mi ken toki pona to</span>'
     ];
-    h2.innerText = quotes[Math.floor(Math.random()*quotes.length)];
+    h2.innerHTML = quotes[Math.floor(Math.random()*quotes.length)];
 };
 setSubtitleQuote();
+function elonMuskPenisFlash2000() {
+    let elon = document.getElementById("ElonMuskPenis");
+    elon.style.height = "100%"
+    window.addEventListener("transitionend",() => {
+      let elon = document.getElementById("ElonMuskPenis");
+      if (elon.style.height === "100%") {
+        let speak = new SpeechSynthesisUtterance("I'm sorry I showed you my penis. Here is 250,000 dollars. Please don't tell anyone.");
+        speak.lang = 'en-US'
+        window.speechSynthesis.speak(speak);
+      };
+      elon.style.height = "0";
+    });
+};
 </script>
 </body>
 </html>

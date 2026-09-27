@@ -42,6 +42,7 @@ p {
     border-style: solid;
     border-width: 0em 0.2em;
     border-color: black;
+    overflow-x: hidden;
 }
 
 .english { 
@@ -49,7 +50,6 @@ p {
 }
 .tokiPona {
     font-family: 'Nasin Nanpa';
-    font-style: normal;
 }
 
 header {
@@ -96,6 +96,10 @@ header .pfp p:hover span {
     opacity: 100%;
 }
 
+header h1, header h2 {
+    max-width: 15em;
+}
+
 h1 {
     font-family: 'Bungee';
     font-size: 5em;
@@ -112,7 +116,7 @@ h2 {
     font-size: 2.5em;
     font-weight: bold;
     font-style: italic;
-    text-decoration: underline;
+    text-decoration: underline dotted;
     margin: 0px;
     color: rgb(145, 165, 196);
     text-align: center;
@@ -125,6 +129,10 @@ hr {
     border-style: solid;
     border-color: black;
 }
+
+.inline-img {
+    cursor: text;
+};
 
 .center p {
     text-align: center;
@@ -183,10 +191,13 @@ hr {
     opacity: 25%;
 }
 
+
 .external {
     display: flex;
     flex-direction: column-reverse;
     width: 18em;
+    background: none;
+    border: none;
 }
 
 .external a, a:hover, a:active, a:visited, a:link {
@@ -321,12 +332,24 @@ input {
     padding-left: 2em;
 }
 
+
+
+
 .mobilewarning {
     font-weight: bolder;
     text-align: center;
     margin-bottom: 3em;
     color: yellow;
     text-shadow: black 0.1em 0.1em;
+}
+
+.elon-musk {
+    width:100%;
+    height: 0%;
+    position: fixed;
+    top: 0px; left: 0px;
+    z-index: 999;
+    transition: height 2s ease-in-out 1s;
 }
 
 /* Most code here basically copied from https://codepen.io/KobaDesu/pen/jOgqBwN */
