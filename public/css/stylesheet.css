@@ -22,7 +22,6 @@ p {
 }
 
 .note {
-    text-align: center;
     font-style: italic;
     color: gray;
     font-size: 1em;
@@ -30,7 +29,7 @@ p {
 
 .page {
     background-color: rgba(230, 255, 230, 0.05);
-    width: 75vw;
+    width: 90%;
     height: 100%;
     padding: 3em;
     padding-bottom: 0;
@@ -68,11 +67,10 @@ header .pfp {
     background-color: black;
     padding: 1em;
     border-radius: 1em;
+    height: 12em;
 }
 
 header .pfp p {
-    width: 10em;
-    height: 10em;
     border-radius: 1em;
     background-size: contain;
     font-size: 1em;
@@ -80,6 +78,7 @@ header .pfp p {
     flex-direction: column;
     align-items: center;
     justify-content: end;
+    aspect-ratio: 1/1;
 }
 
 header .pfp p span {
@@ -94,6 +93,11 @@ header .pfp p span {
 
 header .pfp p:hover span {
     opacity: 100%;
+}
+
+header .headertext {
+    max-width: 90%;
+    overflow-wrap: anywhere;
 }
 
 header h1, header h2 {
@@ -291,6 +295,90 @@ input {
     text-align: center;
 }
 
+.silly-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.silly-box {
+    border: 0.5em solid black;
+    border-radius: 0.5em;
+    width: 45%;
+    max-width: 90%;
+    max-height: fit-content;
+}
+
+.silly-box summary {
+    color: black;
+    font-weight: bold;
+    border-bottom: 0.1em solid black;
+    padding: 0.5em 2em;
+    margin: 0px;
+    width: 100%;
+    background: linear-gradient(180deg, white, rgb(145, 165, 196));
+}
+
+.silly-box div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 6px;
+    justify-content: space-evenly;
+    background: linear-gradient(0deg, rgb(85, 205, 252), rgb(179, 157, 233), rgb(247, 168, 184), rgb(246, 216, 221), rgb(255, 255, 255) 45%, rgb(255, 255, 255), rgb(255, 255, 255) 55%, rgb(246, 216, 221), rgb(247, 168, 184), rgb(179, 157, 233), rgb(85, 205, 252));
+}
+
+.silly-box div a {
+    margin: 0px;
+}
+
+.silly-box div a img {
+    overflow-x: hidden;
+    overflow-y: visible;
+    margin: 0;
+    image-rendering: pixelated;
+    transition: all 0.25s ease-in;
+    z-index: 1;
+}
+
+.silly-box div a img:hover {
+    transform: scale(200%);
+    z-index: 10;
+    background-color: #00000080;
+    box-shadow: 0px 0px 10px 5px #00000080;
+}
+
+.silly-box div .badge {
+    min-width: calc(88px+0.5em);
+}
+
+.badge a {
+    width: 88px;
+    height: 31px;
+}
+
+.badge a img {
+    width: 88px;
+    height: 31px;
+}
+
+
+.silly-box div .stamp {
+    min-width: calc(99px+0.5em);
+}
+
+.stamp a {
+    width: 99px;
+    height: 56px;
+}
+
+.stamp a img {
+    width: 99px;
+    height: 56px;
+}
+
 .linkme {
     background-color: black;
     border-radius: 0.5em;
@@ -352,69 +440,6 @@ input {
     transition: height 2s ease-in-out 1s;
 }
 
-/* Most code here basically copied from https://codepen.io/KobaDesu/pen/jOgqBwN */
-@keyframes scroll-r2l {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-.scroll-r2l {
-    animation: scroll-r2l 60s linear infinite;
-}
-@keyframes scroll-l2r {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(100%);
-    }
-}
-.scroll-l2r {
-    animation: scroll-l2r 60s linear infinite;
-}
-.marquee {
-    overflow: hidden;
-    display: flex;
-    flex-wrap: nowrap;
-    box-sizing: unset;
-    border: 0.5em solid black;
-    border-radius: 0.5em;
-    background: linear-gradient(to right, rgb(85, 205, 252), rgb(179, 157, 233), rgb(247, 168, 184), rgb(246, 216, 221), rgb(255, 255, 255) 45%, rgb(255, 255, 255), rgb(255, 255, 255) 55%, rgb(246, 216, 221), rgb(247, 168, 184), rgb(179, 157, 233), rgb(85, 205, 252))
-}
-.marquee-items {
-    display: flex;
-    flex-shrink: 0;
-    height: 100%;
-    min-width: 100%;
-    position: relative;
-}
-
-.marquee-items a img {
-    margin: 0;
-    image-rendering: pixelated;
-}
-
-.badge a, .badge a img {
-    width: 88px;
-    height: 31px;
-}
-
-.stamp a, .stamp a img {
-    width: 99px;
-    height: 56px;
-}
-
-.paused {
-    -webkit-animation-play-state:paused;
-    -moz-animation-play-state:paused;
-    -o-animation-play-state:paused;
-    animation-play-state:paused;
-}
-/* End of copied code */
-
 .mobile_only {
     display: none;
 }
@@ -430,5 +455,7 @@ input {
 
     .page {
         width: 100%;
+        padding: 1%;
+        border: none;
     }
 }
